@@ -1,6 +1,10 @@
 window.onload = function(){
 	var canvas = document.getElementById('loveContainer');
-	var ctx = canvas.getContext('2d');
+	window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+	if(window.requestAnimationFrame == undefined || canvas.getContext == undefined){
+		alert('亲，遇到了一个问题！你的浏览器处于IE兼容模式或者版本太低了！^_^');
+	}
+	var ctx = canvas.getContext('2d');	
 	var innerHeight = canvas.height;
 	var innerWidth = canvas.width;
 
