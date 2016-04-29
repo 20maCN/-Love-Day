@@ -174,7 +174,7 @@ window.onload = function(){
 			splitMoveConfig1.rotate+=Math.PI*0.02;
 			splitMoveConfig2.scale-=0.005;
 			splitMoveConfig2.lineWidth-=0.02;
-			splitMoveConfig2.moveStepY-=0.6;
+			splitMoveConfig2.moveStepY-=0.4;
 			myRequestAnimationFrame4 = window.requestAnimationFrame(updownMove);
 		}else{
 			window.cancelAnimationFrame(myRequestAnimationFrame4);
