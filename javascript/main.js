@@ -236,11 +236,11 @@ window.onload = function(){
 		ctx.font = '18pt Arial';
 		ctx.globalAlpha = textConfig.alpha;
       	ctx.fillStyle = 'white';
-      	ctx.fillText('亲爱的，我们已经相恋了：', innerWidth/2+25, innerHeight/2-textConfig.stepY);
+      	ctx.fillText('亲爱的，我们已经相恋了：', innerWidth/2+10, innerHeight/2+20-textConfig.stepY);
 
       	ctx.font = '24pt Arial';
       	ctx.fillStyle = 'white';
-      	ctx.fillText('第 '+d+' 天 '+h+' 个小时 '+m+' 分钟 '+s+' 秒 ', innerWidth/2-50, innerHeight/2-textConfig.stepY/2);
+      	ctx.fillText('第 '+d+' 天 '+h+' 个小时 '+m+' 分钟 '+s+' 秒 ', innerWidth/2-65, innerHeight/2-textConfig.stepY/2);
 		ctx.restore();
 	}
 	// 场景五 背景显示 时间显示
