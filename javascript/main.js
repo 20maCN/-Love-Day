@@ -260,13 +260,13 @@ window.onload = function(){
 		for(var j = 0;j < length;j++){
 			if(!heartConfigs[j].flag){
 				if(heartConfigs[j].scale<1){
-					heartConfigs[j].scale+=0.004;
+					heartConfigs[j].scale+=0.008;
 				}else{
 					heartConfigs[j].flag = !heartConfigs[j].flag;
 				}
 			}else{
 				if(heartConfigs[j].scale>0.5){
-					heartConfigs[j].scale-=0.002;
+					heartConfigs[j].scale-=0.004;
 				}else{
 					heartConfigs[j].flag = !heartConfigs[j].flag;
 				}
