@@ -1,0 +1,31 @@
+*{
+	padding:0;
+	margin:0;
+	border:null;
+	font-size: inherit;
+}
+html,body{
+	height:100%;
+}
+body{
+	background-color:#FFFFEE;
+	position:relative;
+}
+#loveContainer{
+	display: block;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top:-360px;
+	margin-left:-530px;
+	border-bottom:4px solid #BE1A25;
+	transition:all 3s ease-in-out;
+	-webkit-transition:all 3s ease-in-out;
+	background-color: #FFFFEE;
+}
+
+// .bump{
+// 	-webkit-transform:scale(1.2);
+// 	-moz-transform:scale(1.2);
+// 	transform:scale(1.2);
+// }
