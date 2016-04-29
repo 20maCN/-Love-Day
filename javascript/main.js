@@ -236,11 +236,11 @@ window.onload = function(){
 		ctx.font = '18pt Arial';
 		ctx.globalAlpha = textConfig.alpha;
       	ctx.fillStyle = 'white';
-      	ctx.fillText('亲爱的，我们已经相恋了：', innerWidth/2+10, innerHeight/2+20-textConfig.stepY);
+      	ctx.fillText('亲爱的，我们已经相恋了：', innerWidth/2+10, innerHeight/2+30-textConfig.stepY);
 
       	ctx.font = '24pt Arial';
       	ctx.fillStyle = 'white';
-      	ctx.fillText('第 '+d+' 天 '+h+' 个小时 '+m+' 分钟 '+s+' 秒 ', innerWidth/2-65, innerHeight/2-textConfig.stepY/2);
+      	ctx.fillText('第 '+d+' 天 '+h+' 个小时 '+m+' 分钟 '+s+' 秒 ', innerWidth/2-75, innerHeight/2+10-textConfig.stepY/2);
 		ctx.restore();
 	}
 	// 场景五 背景显示 时间显示
@@ -289,26 +289,6 @@ window.onload = function(){
 		window.requestAnimationFrame(backgroundHeart);
 	}
 
-	// 场景六 飘落
-	// function pl(){
-	// 	ctx.clearRect(0,0,innerWidth,innerHeight);
-	// 	ctx.save();
-	// 	ctx.globalCompositeOperation = 'destination-over';
-	// 	if(textConfig.stepY>180){
-	// 		textConfig.stepY-=1;
-	// 		textConfig.alpha+=0.01;
-	// 	}
-	// 	filltime();
-	// 	drawBGOutline();
-	// 	var length = hearts.length;
-	// 	for(var i = 0;i < length;i++){
-	// 		drawBGHeart(hearts[i],heartConfigs[i]);
-	// 	}
-		
-	// 	ctx.restore();
-	// 	window.requestAnimationFrame(pl);
-
-	// }
 	canvas.onmousemove = function(e){
 		var rect = canvas.getBoundingClientRect();
        	var location = {
