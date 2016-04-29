@@ -1,9 +1,10 @@
 window.onload = function(){
 	var canvas = document.getElementById('loveContainer');
 	var ctx = canvas.getContext('2d');
-
 	var innerHeight = canvas.height;
 	var innerWidth = canvas.width;
+
+	// 状态跟踪变量
 	var bigHeart = {x:[],y:[]};
 	var smallHeart = {x:[],y:[]};
 	var currentHeart = null;
@@ -30,6 +31,8 @@ window.onload = function(){
 	startTime.setHours(20);
 	startTime.setMinutes(20);
 	startTime.setSeconds(20);
+
+
 	// 工具  设置heart大小
 	function getPoints(heart,size){
 		for(var i=0,j=0;i<2*Math.PI;i+=0.01,j++){
@@ -90,7 +93,7 @@ window.onload = function(){
 		lineTo(5);
 		ctx.lineWidth = 4;
 		// ctx.shadowColor = '#D82C1F';
-  //     	ctx.shadowBlur = 20;
+ 		// ctx.shadowBlur = 20;
 		ctx.strokeStyle = '#BE1A25';
 		ctx.stroke();
 		ctx.restore();
@@ -145,7 +148,6 @@ window.onload = function(){
 
 		myRequestAnimationFrame2 = window.requestAnimationFrame(drawBumpHeart);
 	}
-
 	// 场景三 左右移动
 	function splitMove(){
 		ctx.clearRect(0,0,innerWidth,innerHeight);
@@ -162,13 +164,12 @@ window.onload = function(){
 		}
 		
 	}
-
 	// 场景四 上下移动 放大bigHeart
 	function updownMove(){
 		ctx.clearRect(0,0,innerWidth,innerHeight);
 		drawHeartoutline()
 		drawFillHeart();
-		if(splitMoveConfig1.moveStepY<360){
+		if(splitMoveConfig1.moveStepY<380){
 			splitMoveConfig1.moveStepY+=2;
 			splitMoveConfig1.rotate+=Math.PI*0.02;
 			splitMoveConfig2.scale-=0.005;
@@ -183,10 +184,7 @@ window.onload = function(){
 		}
 	}
 
-
-
-
-
+	// 场景五工具函数
 	function drawBGHeart(heart,heartConfig){
 		ctx.save();
 		ctx.translate(heartConfig.tX,heartConfig.tY);
