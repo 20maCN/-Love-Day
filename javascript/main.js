@@ -244,8 +244,8 @@ window.onload = function(){
 
       	ctx.font = '24pt Arial';
       	ctx.fillStyle = 'white';
-      	// ctx.fillText('第 '+d+' 天 '+h+' 个小时 '+m+' 分钟 '+s+' 秒 ', innerWidth/2-75, innerHeight/2+10-textConfig.stepY/2);
-      	ctx.fillText('第 '+0+' 天 '+0+' 个小时 '+0+' 分钟 '+0+' 秒 ', innerWidth/2-75, innerHeight/2+10-textConfig.stepY/2);
+      	ctx.fillText('第 '+d+' 天 '+h+' 个小时 '+m+' 分钟 '+s+' 秒 ', innerWidth/2-75, innerHeight/2+10-textConfig.stepY/2);
+      	// ctx.fillText('第 '+0+' 天 '+0+' 个小时 '+0+' 分钟 '+0+' 秒 ', innerWidth/2-75, innerHeight/2+10-textConfig.stepY/2);
 		ctx.restore();
 	}
 	// 场景五 背景显示 时间显示
