@@ -240,11 +240,13 @@ window.onload = function(){
 		ctx.font = '18pt Arial';
 		ctx.globalAlpha = textConfig.alpha;
       	ctx.fillStyle = 'white';
-      	ctx.fillText('亲爱的，我们已经相恋了：', innerWidth/2+10, innerHeight/2+30-textConfig.stepY);
+      	ctx.fillText('亲爱的，我们已经相恋了', innerWidth/2+10, innerHeight/2+30-textConfig.stepY);
 
       	ctx.font = '24pt Arial';
       	ctx.fillStyle = 'white';
       	ctx.fillText('第 '+d+' 天 '+h+' 个小时 '+m+' 分钟 '+s+' 秒 ', innerWidth/2-75, innerHeight/2+10-textConfig.stepY/2);
+      	ctx.font = '18pt Arial';
+      	// ctx.fillText('过了第一个我们的节日~~^_^~~ ', innerWidth/2+30, innerHeight/2+70-textConfig.stepY/2);
       	// ctx.fillText('第 '+0+' 天 '+0+' 个小时 '+0+' 分钟 '+0+' 秒 ', innerWidth/2-75, innerHeight/2+10-textConfig.stepY/2);
 		ctx.restore();
 	}
