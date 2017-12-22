@@ -240,6 +240,7 @@ window.onload = function(){
 		ctx.font = '18pt Arial';
 		ctx.globalAlpha = textConfig.alpha;
       	ctx.fillStyle = 'white';
+
       	ctx.fillText('亲爱的，我们已经相恋了', innerWidth/2+10, innerHeight/2+30-textConfig.stepY);
 
       	ctx.font = '24pt Arial';
